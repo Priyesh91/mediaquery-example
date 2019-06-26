@@ -146,7 +146,7 @@ h3 {
 
 
 
-/* If the screen size is 720px wide or less*/
+/* If the screen size is 760px wide or less*/
 @media only screen and (max-width: 760px) {
    /* hiding  fullscreen div in mobile */
     .fullscreen {
