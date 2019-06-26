@@ -1,0 +1,160 @@
+body {
+    background-color: #ffffff;
+}
+h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+
+/* Main Styles */
+
+.container {
+    padding-top: 2%;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+.container-fluid {
+    padding: 0px;
+    
+}
+
+/* MainStyles End */
+
+/* Carusel */
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.col-md-3 {
+    padding:0;
+}
+
+
+
+/* Navigation Bar Styles */
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    
+}
+.navbar-light .navbar-toggler {
+    
+    margin-left: 42%;
+    border: 1px solid black;
+    
+    float: left;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 5px 15px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: red;
+}
+.navbar-brand {
+    font-family: 'Cinzel', serif;
+    font-size: 200%;
+    
+}
+.nav-item {
+    text-align: center;
+}
+
+/* Navbar styles end */
+
+
+/* Carousel Items */
+@media (max-width: 760px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: flex;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 760px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+      -webkit-transform: translateX(33.333%);
+      -moz-transform: translateX(33.333%);
+      -ms-transform: translateX(33.333%);
+      -o-transform: translateX(33.333%);
+}
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+/* End Carousel Items */
+
+
+
+
+/* Footer Items */
+
+.fab {
+    font-size: 25px;
+    color:red;
+    padding: 0px 10px 0px 10px;
+    
+}
+.fab:hover {
+    text-decoration: none;
+    color: blueviolet;
+}
+.footer {
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+.info-box {
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+
+/* Code added by PRIYESH */
+/* hiding mobile div */
+.mobilescreen{
+    display:none;
+}
+
+
+
+/* If the screen size is 720px wide or less*/
+@media only screen and (max-width: 720px) {
+   /* hiding  fullscreen div in mobile */
+    .fullscreen {
+      display: none;
+    }
+    /* displaying mobilescreen in mobile */
+    .mobilescreen {
+        display: unset;
+    }
+
+  }
